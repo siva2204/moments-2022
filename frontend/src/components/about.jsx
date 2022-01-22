@@ -56,7 +56,7 @@ import {
             spacing={4}
     >
     <Center spacing={10} mb={25}>
-    <Text fontSize={'4xl'} color={'#316BFF'}>ABOUT </Text> <Text ml={'0.5rem'}fontSize={'4xl'}>US</Text>
+    <Text fontSize={'4xl'} color={'accent'}>ABOUT </Text> <Text ml={'0.5rem'}fontSize={'4xl'}>US</Text>
     </Center>
     <Text color={'gray.600'}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum sollicitudin diam ac lorem cras tellus facilisis ut. Morbi dictum ut sed pellentesque gravida id tristique. Nec vel quis at risus at donec sed."</Text>
     </Stack>
@@ -76,7 +76,7 @@ import {
             <Box mb={{ base: 8, md: 20 }}>
               
               <HStack>
-              <Text color={'#316BFF'}fontSize={{ base: '3xl', md: '5xl' }}>
+              <Text color={'accent'}fontSize={{ base: '3xl', md: '5xl' }}>
                 Moments </Text>
               <Text
                 
@@ -106,7 +106,7 @@ import {
                 zIndex={1}
                 _hover={{
                 textDecoration: 'none',
-                bg: useColorModeValue('#316BFF','#316BFF'),
+                bg: useColorModeValue('accent','accent'),
                 color:'white'
               }}
 

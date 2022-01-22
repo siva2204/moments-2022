@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   ChakraProvider,
- 
+  theme,
   Box,
   Heading,
   Container,
@@ -11,20 +11,15 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-  Flex,
-  extendTheme
+  Flex
 } from '@chakra-ui/react';
-import { Link, useParams } from 'react-router-dom';
+
 import banner from '../assets/images/banner.png'
 import Navbar from '../components/nav';
 import About from '../components/about';
 import Members from '../components/members';
 import Footer from '../components/footer';
-import theme from '../components/customtheme.js'
-// const theme= extendTheme({body:'monospace'},)
-// import Fonts from '../fonts/fonts';
-
-function Home() {
+function Workshop() {
   return (
     <Box>
     
@@ -44,12 +39,10 @@ function Home() {
        >
       
       </Flex>
-      <About/>
-          <Members/>
+      
       <Footer/>
     </Box>
-    
   );
 }
 
-export default Home;
+export default Workshop;

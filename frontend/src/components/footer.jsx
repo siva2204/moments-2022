@@ -68,26 +68,26 @@ export default function Footer() {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={10}>
           <Stack align={'flex-start'}>
             <ListHeader>PAGES</ListHeader>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Workshops</Link>
-            <Link href={'#'}>Events</Link>
+            <Link href={'/home'}>Home</Link>
+            <Link href={'/about'}>About</Link>
+            <Link href={'/workshops'}>Workshops</Link>
+            <Link href={'/events'}>Events</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
             <ListHeader>CONTACTS</ListHeader>
-            <Stack direction={'row'} spacing={6}>
-            <Text >NAME </Text>
-            <Link href={'#'} color={'blue.400'}>+91 9874561235</Link>
-            </Stack>
-            <Stack direction={'row'} spacing={6}>
-            <Text >NAME </Text>
-            <Link href={'#'} color={'blue.400'}>+91 9874561235</Link>
-            </Stack>
-            <Stack direction={'row'} spacing={6}>
-            <Text >NAME </Text>
-            <Link href={'#'} color={'blue.400'}>+91 9874561235</Link>
-            </Stack>
+            
+            <Text >NAME <Link href={'#'} color={'accent'}> +91 9874561235</Link></Text>
+            
+            
+            
+            <Text >NAME <Link href={'#'} color={'accent'}> +91 9874561235</Link></Text>
+            
+            
+            
+            <Text >NAME <Link href={'#'} color={'accent'}> +91 9874561235</Link></Text>
+            
+            
           </Stack>
 
           <Stack align={'flex-start'}>
@@ -97,19 +97,25 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>FOLLOW US ON</ListHeader>
             <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Facebook'} href={'#'}>
+            <SocialButton label={'Facebook'} href={'https://www.facebook.com/momentsnittrichy/'} >
               <FaFacebook />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://instagram.com/moments.nitt'}>
               <FaInstagram />
             </SocialButton>
+            <SocialButton label={'Youtube'} href={'https://youtube.com/channel/UCC3RfmE-enzmzcMWHtIumag'}>
+              <FaYoutube />
+            </SocialButton>
+
+
+{/* 
             <SocialButton label={'Linkedin'} href={'#'}>
               <FaLinkedin />
             </SocialButton>
             
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
-            </SocialButton>
+            </SocialButton> */}
           </Stack>
             
           </Stack>
