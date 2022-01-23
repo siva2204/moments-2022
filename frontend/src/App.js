@@ -7,34 +7,41 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
+
+
 } from '@chakra-ui/react';
+import "@fontsource/plus-jakarta-sans";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+import Home from './pages/home';
+import Aboutpage from './pages/about'
+import Events from './pages/events'
+import Workshop from './pages/workshop'
+import Navbar from './components/nav'
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import theme from './components/customtheme.js'
+
+// const theme= extendTheme({body:'monospace'},)
+
 
 function App() {
+  {console.log(theme)}
   return (
+    
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
+          {/* <Home /> */}
+          <Router>
+        <Routes>
+        <Route path='/:page' element={<Navbar/>} />
+        <Route exact path='/' element={<Home/>} /> 
+        <Route exact path='/home' element={<Home/>} />
+        <Route exact path='/about' element={<Aboutpage/>} />
+        <Route exact path='/events' element={<Events/>} />
+        <Route exact path='/workshop' element={<Workshop/>} />
+
+        </Routes>
+      </Router>
+      
     </ChakraProvider>
   );
 }
