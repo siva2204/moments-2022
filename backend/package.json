@@ -6,14 +6,29 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "npx prettier --write .",
-    "start": "node src/app.js"
+    "build": "babel src -d dist",
+    "start": "rm -rf dist/ && npm run build && node dist/app.js",
+    "dev": "nodemon --exec babel-node src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "email-validator": "^2.0.4",
     "express": "^4.17.2",
-    "mongoose": "^6.1.5"
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.6",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "nodemon": "^2.0.15"
   }
 }
