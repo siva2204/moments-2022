@@ -19,6 +19,7 @@ import Navbar from '../components/nav';
 import About from '../components/about';
 import Members from '../components/members';
 import Footer from '../components/footer';
+import ComingSoon from '../components/comingsoon';
 function Events() {
   return (
     <Box>
@@ -26,7 +27,7 @@ function Events() {
       <Navbar />
       <Flex
       w={'full'}
-      h={'100vh'}
+      h={'40vh'}
       // background={banner}
       // backgroundColor={'rgba(122, 12, 32, 0.66)'}
       backgroundImage={banner}
@@ -34,12 +35,11 @@ function Events() {
       backgroundSize={'cover'}
       backgroundPosition={'center'}
       back
-      
-      
+          
        >
       
       </Flex>
-      
+      <ComingSoon/>
       <Footer/>
     </Box>
   );

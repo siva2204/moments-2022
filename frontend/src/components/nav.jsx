@@ -163,6 +163,7 @@ import {
 
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from '../white-logo.svg'
+import whitelogo from '../logo-w.svg'
 import {  useParams, useLocation  } from 'react-router-dom';
 const Links = [{
   label: 'Home',
@@ -194,7 +195,7 @@ const NavLink = ({ children,current }: { children: ReactNode }) => (
     px={2}
     py={1}
     rounded={'md'}
-    fontWeight={current===children.path?'900':'500'} 
+    fontWeight={current===children.path?'900':'400'} 
     color={current===children.path?'accent':'gray.100'}
     _hover={{
       textDecoration: 'none',
@@ -210,14 +211,15 @@ export default function Nav() {
 
   const { isOpen, onToggle } = useDisclosure();
 
-
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box>
       <Flex
+      zIndex={12}
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
-        position={'fixed'}
+        
         width={'100%'}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -226,6 +228,7 @@ export default function Nav() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}>
+        <Center alignContent={'center'}></Center>
         <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -238,14 +241,18 @@ export default function Nav() {
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
           />
+          <Center alignContent={'center'}>
+          <Image src={whitelogo} boxSize={50} />
+       
+        </Center> 
         </Flex>
         
-
-          
-            
+              <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
           
         
-
+            
        
       </Flex>
       <DesktopNav />
@@ -287,7 +294,7 @@ const DesktopNav = () => {
   return (
     <>
       {console.log(page)}
-      <Box zIndex={12} bg={' rgba(10, 12, 32, 0.35)'} px={4} position={'fixed'} width={'100%'} display={{ base: 'none', md: 'block' }}> 
+      <Box zIndex={12} bg={' rgba(10, 12, 32, 0.45)'} px={4} position={'fixed'} width={'100%'} display={{ base: 'none', md: 'block' }}> 
         <Flex h={70} alignItems={'center'} justifyContent={'space-between'}>
           <Box mt={4}><Image src={logo} boxSize={180} /></Box>
           <Stack direction={'row'} alignItems={'center'}>
@@ -362,7 +369,7 @@ const MobileNav = () => {
   return (
     <Stack
       bg={useColorModeValue('white', 'gray.800')}
-      p={4}
+      p={4} pt={15}
       display={{ md: 'none' }}>
       {Links.map((link) => (
         <MobileNavItem key={link.path} >{link}</MobileNavItem>

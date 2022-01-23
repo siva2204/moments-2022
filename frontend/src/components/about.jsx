@@ -58,7 +58,7 @@ import {
     <Center spacing={10} mb={25}>
     <Text fontSize={'4xl'} color={'accent'}>ABOUT </Text> <Text ml={'0.5rem'}fontSize={'4xl'}>US</Text>
     </Center>
-    <Text color={'gray.600'}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum sollicitudin diam ac lorem cras tellus facilisis ut. Morbi dictum ut sed pellentesque gravida id tristique. Nec vel quis at risus at donec sed."</Text>
+    <Text color={'gray.600'}>Moments: Started as an Environmental Engineering symposium in 1992 has grown to a national level technical symposium extending its arms into all fields of Civil Engineering. It has captured the minds of various civil engineers in the country through its multitude of events ranging from technical quizzes to paper presentations, Rehabilato to Event X.</Text>
     </Stack>
         </Center>
         </Stack>
@@ -90,7 +90,7 @@ import {
                 fontSize={{ base: '3xl', md: '5xl' }}
               >the annual symposium</Text>
               <Text fontSize={'xl'}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum sollicitudin diam ac lorem cras tellus facilisis ut. Morbi dictum ut sed pellentesque gravida id tristique. Nec vel quis at risus at donec sed.
+              Moments: Started as an Environmental Engineering symposium in 1992 has grown to a national level technical symposium extending its arms into all fields of Civil Engineering. It has captured the minds of various civil engineers in the country through its multitude of events ranging from technical quizzes to paper presentations, Rehabilato to Event X.
               </Text>
 
 

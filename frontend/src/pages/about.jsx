@@ -19,14 +19,16 @@ import Navbar from '../components/nav';
 import About from '../components/about';
 import Members from '../components/members';
 import Footer from '../components/footer';
+import ComingSoon from '../components/comingsoon';
 function Aboutpage() {
+
   return (
     <Box>
     
       <Navbar />
       <Flex
       w={'full'}
-      h={'100vh'}
+      h={'40vh'}
       // background={banner}
       // backgroundColor={'rgba(122, 12, 32, 0.66)'}
       backgroundImage={banner}
@@ -34,12 +36,12 @@ function Aboutpage() {
       backgroundSize={'cover'}
       backgroundPosition={'center'}
       back
-      
-      
+          
        >
+
       
       </Flex>
-      
+      <ComingSoon/>
       <Footer/>
     </Box>
   );

@@ -77,15 +77,15 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>CONTACTS</ListHeader>
             
-            <Text >NAME <Link href={'#'} color={'accent'}> +91 9874561235</Link></Text>
+            <Text >NAME <Link href={'#'} color={'accent'} ml={2}> +91 9874561235</Link></Text>
             
             
             
-            <Text >NAME <Link href={'#'} color={'accent'}> +91 9874561235</Link></Text>
+            <Text >NAME <Link href={'#'} color={'accent'} ml={2}> +91 9874561235</Link></Text>
             
             
             
-            <Text >NAME <Link href={'#'} color={'accent'}> +91 9874561235</Link></Text>
+            <Text >NAME <Link href={'#'} color={'accent'} ml={2}> +91 9874561235</Link></Text>
             
             
           </Stack>
@@ -95,7 +95,7 @@ export default function Footer() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>FOLLOW US ON</ListHeader>
+            <ListHeader >FOLLOW US ON</ListHeader>
             <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Facebook'} href={'https://www.facebook.com/momentsnittrichy/'} >
               <FaFacebook />

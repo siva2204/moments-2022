@@ -32,8 +32,8 @@ function Home() {
       <Flex
       w={'full'}
       h={'100vh'}
-      // background={banner}
-      // backgroundColor={'rgba(122, 12, 32, 0.66)'}
+      
+      backgroundColor={'rgba(10, 12, 32, 0.66)'}
       backgroundImage={banner}
       backgroundBlendMode={'overlay'}
       backgroundSize={'cover'}
