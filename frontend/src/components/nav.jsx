@@ -115,12 +115,12 @@ export default function Nav() {
 
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('gray.600', 'gray.200');
-  const linkHoverColor = useColorModeValue('gray.800', 'white');
-  const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+  // const linkColor = useColorModeValue('gray.600', 'gray.200');
+  // const linkHoverColor = useColorModeValue('gray.800', 'white');
+  // const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   const { page } = useParams();
   const location = useLocation();
   console.log(location.pathname);
@@ -195,6 +195,7 @@ const MobileNav = () => {
 };
 
 const MobileNavItem = ({ children }) => {
+  // eslint-disable-next-line no-unused-vars
   const { isOpen, onToggle } = useDisclosure();
   // {console.log(children,href,label)}
   return (

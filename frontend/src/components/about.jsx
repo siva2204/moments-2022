@@ -1,33 +1,26 @@
 import {
     Box,
     Container,
-    Heading,
-    SimpleGrid,
-    Icon,
     Text,
     Stack,
     HStack,
-    VStack,
-    Section,
     Center,
     Flex,
     Button,
     useColorModeValue,
-    useColorMode,
     Image
     
   } from '@chakra-ui/react';
-  import { CheckIcon } from '@chakra-ui/icons';
   import ring from '../assets/svgs/Vector.svg'
   import circle from '../assets/svgs/Vector-1.svg'
   // Replace test data with your own
-  const features = Array.apply(null, Array(2)).map(function (x, i) {
-    return {
-      id: i,
-      title: 'Lorem ipsum dolor sit amet',
-      text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.',
-    };
-  });
+  // const features = Array.apply(null, Array(2)).map(function (x, i) {
+  //   return {
+  //     id: i,
+  //     title: 'Lorem ipsum dolor sit amet',
+  //     text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.',
+  //   };
+  // });
 
   export default function About() {
     const bg=useColorModeValue("white", "#202236"  )

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+/* eslint-disable no-unused-vars */
 import {
   Box,
   Container,
@@ -13,7 +13,7 @@ import {
   useColorMode
   
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import {FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
 import logo from '../assets/svgs/logo.svg';
 import whitelogo from '../assets/svgs/logo-w.svg'
 

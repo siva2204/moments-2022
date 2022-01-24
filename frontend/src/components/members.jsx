@@ -1,12 +1,7 @@
-import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex ,
-  useColorModeValue,useColorMode,useDisclosure,
-  
-  Wrap,WrapItem, Avatar, Image, Center, HStack} from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import { Box, SimpleGrid, Text, Stack, Flex ,
+  useColorModeValue, Image, Center, HStack} from '@chakra-ui/react';
 
 import {MEMBERDATA} from '../data/membersDat'
-import { InfoIcon } from '@chakra-ui/icons';
 const memberbig= MEMBERDATA.slice(0,4)
 const membersmall= MEMBERDATA.slice(4,MEMBERDATA.length)
 
