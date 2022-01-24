@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de0e42e7.css",
+    "main.js": "/static/js/main.cefbdd40.js",
+    "static/js/377.bce65f74.chunk.js": "/static/js/377.bce65f74.chunk.js",
+    "static/media/banner.png": "/static/media/banner.5d9605d2b279582a426a.png",
+    "static/media/white-logo.svg": "/static/media/white-logo.ce28ad7437a6f76f2089dd935f3b1c01.svg",
+    "static/media/logo-w.svg": "/static/media/logo-w.84346d4e5468b1cd9d5422db59fbfda5.svg",
+    "static/media/logo.svg": "/static/media/logo.6ecbef97348e168027edbe9521d159a8.svg",
+    "static/media/plus-jakarta-sans-latin-400-normal.woff": "/static/media/plus-jakarta-sans-latin-400-normal.43e0fcf9ff600ba9fc40.woff",
+    "static/media/plus-jakarta-sans-latin-400-normal.woff2": "/static/media/plus-jakarta-sans-latin-400-normal.2a7bb4510d86bea390e9.woff2",
+    "static/media/Vector.svg": "/static/media/Vector.e694d117f29f718cc0f00a604b943458.svg",
+    "index.html": "/index.html",
+    "static/media/Vector-1.svg": "/static/media/Vector-1.37614e39f97f4578378fb91e4e704f1d.svg",
+    "main.de0e42e7.css.map": "/static/css/main.de0e42e7.css.map",
+    "main.cefbdd40.js.map": "/static/js/main.cefbdd40.js.map",
+    "377.bce65f74.chunk.js.map": "/static/js/377.bce65f74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de0e42e7.css",
+    "static/js/main.cefbdd40.js"
+  ]
+}
