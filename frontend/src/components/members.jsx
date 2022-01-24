@@ -10,13 +10,7 @@ import { InfoIcon } from '@chakra-ui/icons';
 const memberbig= MEMBERDATA.slice(0,4)
 const membersmall= MEMBERDATA.slice(4,MEMBERDATA.length)
 
-interface FeatureProps {
-  title: string;
-  text: string;
-  icon: ReactElement;
-}
-
-const Feature = ({ title, text, icon }: FeatureProps) => {
+const Feature = ({ title, text, icon }) => {
   return (
     <Stack alignItems={'center'}>
       

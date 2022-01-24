@@ -1,17 +1,9 @@
 import React from 'react';
 import {
-  ChakraProvider,
-  theme,
   Box,
+  Flex,
   Heading,
-  Container,
-  Text,
-  Button,
-  Stack,
-  Icon,
-  useColorModeValue,
-  createIcon,
-  Flex
+  Center
 } from '@chakra-ui/react';
 
 function ComingSoon() {
@@ -21,12 +13,17 @@ function ComingSoon() {
    
       <Flex
       w={'full'}
-      h={'100vh'}
-    
-      
+      h={'50vh'}
        >
-       Coming Soon     
+    <Center width={'full'}>
+    <Heading as='h2' size='2xl'>
+       Augmentation In Progress
+     </Heading>
+      </Center>
+
       </Flex>
+
+
       
 
     </Box>

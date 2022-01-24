@@ -18,8 +18,8 @@ import {
     
   } from '@chakra-ui/react';
   import { CheckIcon } from '@chakra-ui/icons';
-  import ring from '../Vector.svg'
-  import circle from '../Vector-1.svg'
+  import ring from '../assets/svgs/Vector.svg'
+  import circle from '../assets/svgs/Vector-1.svg'
   // Replace test data with your own
   const features = Array.apply(null, Array(2)).map(function (x, i) {
     return {

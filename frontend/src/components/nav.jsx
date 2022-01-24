@@ -1,154 +1,15 @@
-// import React from "react"
-// import { SimpleGrid } from "@chakra-ui/layout"
-
-// import { Box, Center, Divider } from "@chakra-ui/react"
-
-// const DesktopNavMenu = ({ internalLinks, externalLinks }) => (
-//   <SimpleGrid alignItems="center" rows={1} spacing={10} display={{ base: "none", md: "flex" }}>
-
-//     {
-//       Links.map((link) => (
-        
-//           <NavLink>
-//             {link}
-//           </NavLink>
-
-//       ))
-//     }
-
-
-
- 
-
-//   </SimpleGrid>
-
-// )
-
-// export default DesktopNavMenu
-
-
-
-
-
-
-// here
-
-
-
-
-// import React from "react"
-// import { Flex , Box} from "@chakra-ui/react"
-// import { SimpleGrid } from "@chakra-ui/layout"
-// const Links = ['Dashboard', 'Projects', 'Team','Ok'];
-
-
-// const Navbar = ({ internalLinks, externalLinks }) => {
-//   const NavLink = props => (
-//     <Box
-//       padding={0.6}
-//       as="button"
-//       w="100%"
-//       fontSize="xl"
-//       textAlign="center"
-//       fontWeight="medium"
-//       transition="0.2s ease-in-out"
-//       textTransform="capitalize"
-//       _hover={{
-//         color: "aqua.900",
-//       }}
-//     >
-//       {props.children}
-//     </Box>
-//   )
-
-//   return (
-//     <Flex
-//       position="fixed"
-//       width="100%"
-//       bgColor="rgb(0, 40, 63, 0.7)"
-//       top="0"
-//       as="nav"
-//       zIndex="5"
-      
-//     >
-//       <Flex
-        
-//         w="100%"
-//         justifyContent="space-between"
-//         alignItems="center"
-//         paddingY={{ base: 5, md: 6 }}
-//         paddingX={10}
-//         zIndex="5"
-//       >
-        
-
-//         <Flex alignItems="center">
-//         <SimpleGrid alignContent={"center"} rows={1} spacing={20} display={{ base: "none", md: "flex" }}>
-
-// {
-//   Links.map((link) => (
-    
-//       <NavLink>
-//         {link}
-//       </NavLink>
-    
-//   ))
-// }
-
-
-// </SimpleGrid>
-
-//         </Flex>
-//       </Flex>
-
-
-//     </Flex>
-//   )
-// }
-
-
-
-// export default Navbar
-
-
-
-// end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   Link,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
+
   useDisclosure,
   useColorModeValue,
   Stack,
-  useBreakpointValue,
   Text,
   Image,
   Collapse,
-  Icon,
   HStack,
   useColorMode,
   Center,
@@ -157,20 +18,17 @@ import {
 import {
   HamburgerIcon,
   CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
 } from '@chakra-ui/icons';
 
+import {Link as RouterLink} from "react-router-dom";
+
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import logo from '../white-logo.svg'
-import whitelogo from '../logo-w.svg'
+import logo from '../assets/svgs/white-logo.svg'
+import whitelogo from '../assets/svgs/logo-w.svg'
 import {  useParams, useLocation  } from 'react-router-dom';
 const Links = [{
   label: 'Home',
   path: '/'
-}, {
-  label: 'About',
-  path: '/about'
 }, {
   label: 'Workshop',
   path: '/workshop'
@@ -179,19 +37,11 @@ const Links = [{
   path: '/events'
 }];
 
-// const Links=['a','b']
 
-
-
-
-
-
-
-
-const NavLink = ({ children,current }: { children: ReactNode }) => (
-  // console.log(children)
+const NavLink = ({ children,current }) => (
   
-  <Link
+  <Link  as={RouterLink}
+  to={children.path}
     px={2}
     py={1}
     rounded={'md'}
@@ -201,8 +51,7 @@ const NavLink = ({ children,current }: { children: ReactNode }) => (
       textDecoration: 'none',
       color: 'gray.300',
     }}
-    href={children.path}>
-    {console.log(current,'22')}
+    >
     {children.label}
   </Link>
 );
@@ -265,22 +114,6 @@ export default function Nav() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');
   const linkHoverColor = useColorModeValue('gray.800', 'white');
@@ -319,7 +152,7 @@ const DesktopNav = () => {
           </Stack>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
-            <Button
+            {/* <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
@@ -333,7 +166,7 @@ const DesktopNav = () => {
               bg: '#1F51FF',
             }}>
             Register
-          </Button>
+          </Button> */}
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
@@ -346,23 +179,6 @@ const DesktopNav = () => {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const MobileNav = () => {
@@ -378,7 +194,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ children }: NavItem) => {
+const MobileNavItem = ({ children }) => {
   const { isOpen, onToggle } = useDisclosure();
   // {console.log(children,href,label)}
   return (
@@ -405,17 +221,3 @@ const MobileNavItem = ({ children }: NavItem) => {
     </Stack>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
