@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+/* eslint-disable no-unused-vars */
 import {
   Box,
   Container,
@@ -13,12 +13,12 @@ import {
   useColorMode
   
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
-import logo from '../logo.svg';
-import whitelogo from '../logo-w.svg'
+import {FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
+import logo from '../assets/svgs/logo.svg';
+import whitelogo from '../assets/svgs/logo-w.svg'
 
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children }) => {
   
   return (
     <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
@@ -31,10 +31,6 @@ const SocialButton = ({
   children,
   label,
   href,
-}: {
-  children: ReactNode;
-  label: string;
-  href: string;
 }) => {
   return (
     <chakra.button
@@ -64,12 +60,12 @@ export default function Footer() {
     <Box
       bg={useColorModeValue('white', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'6xl'} py={10}>
+      <Container as={Stack} maxW={'8xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={10}>
           <Stack align={'flex-start'}>
             <ListHeader>PAGES</ListHeader>
             <Link href={'/home'}>Home</Link>
-            <Link href={'/about'}>About</Link>
+            {/* <Link href={'/about'}>About</Link> */}
             <Link href={'/workshops'}>Workshops</Link>
             <Link href={'/events'}>Events</Link>
           </Stack>
@@ -77,22 +73,19 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>CONTACTS</ListHeader>
             
-            <Text >NAME <Link href={'#'} color={'accent'} ml={2}> +91 9874561235</Link></Text>
+            <Text >Merciidus R E<Link href={'#'} color={'accent'} ml={2}>+91 9677614593</Link></Text>
             
             
             
-            <Text >NAME <Link href={'#'} color={'accent'} ml={2}> +91 9874561235</Link></Text>
+            <Text >Ezhilarasan V<Link href={'#'} color={'accent'} ml={2}>+91 7502550473</Link></Text>
             
             
             
-            <Text >NAME <Link href={'#'} color={'accent'} ml={2}> +91 9874561235</Link></Text>
+            <Text >Prasanna P<Link href={'#'} color={'accent'} ml={5}>+91 7358836573</Link></Text>
             
             
           </Stack>
 
-          <Stack align={'flex-start'}>
-            
-          </Stack>
 
           <Stack align={'flex-start'}>
             <ListHeader >FOLLOW US ON</ListHeader>

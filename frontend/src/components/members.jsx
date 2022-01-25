@@ -1,24 +1,22 @@
-import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex ,
-  useColorModeValue,useColorMode,useDisclosure,
-  
-  Wrap,WrapItem, Avatar, Image, Center, HStack} from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import { Box, SimpleGrid, Text, Stack, Flex ,
+  useColorModeValue, Image, Center, HStack} from '@chakra-ui/react';
 
 import {MEMBERDATA} from '../data/membersDat'
-import { InfoIcon } from '@chakra-ui/icons';
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../data/member-photos', false, /\.(png|jpe?g|svg|JPE?G|jfif|jpg)$/));
+
 const memberbig= MEMBERDATA.slice(0,4)
 const membersmall= MEMBERDATA.slice(4,MEMBERDATA.length)
 
-interface FeatureProps {
-  title: string;
-  text: string;
-  icon: ReactElement;
-}
-
-const Feature = ({ title, text, icon }: FeatureProps) => {
+const Feature = ({ title, text, icon }) => {
+ 
   return (
-    <Stack alignItems={'center'}>
+    <Stack alignItems={'center'} spacing={0}>
       
       <Flex
         
@@ -31,11 +29,11 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         >
         {icon}
       </Flex>
-      <HStack>
-      <Text m={0} p={0} fontWeight={600} color={'accent'}>{title.split(' ')[0]}</Text>
-      <Text m={0} p={0} fontWeight={600}>{title.split(' ').reverse().slice( 0,-1).join(' ')}</Text>
+      <HStack spacing={1}>
+      <Text m={0} p={0} fontWeight={600} color={'accent'} fontSize={15}>{title.split(' ')[0]}</Text>
+      <Text  m={0} p={0} fontWeight={400} fontSize={15}>{title.split(' ').reverse().slice( 0,-1).join(' ')}</Text>
       </HStack>
-      <Text color={'gray.600'}>{text}</Text>
+      <Text color={'gray.600'}fontSize={13} mt={0}>{text}</Text>
     </Stack>
   );
 };
@@ -55,11 +53,9 @@ export default function Members() {
       <SimpleGrid columns={{ base: 1, md: 2, lg:4}} spacing={{base:10,md:15}} p={100} pb={0}  >
       {memberbig.map((info) => (         
         <Feature
-          icon={<Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' borderRadius='full' maxH={{base: 300, md:200}} />}
+          icon={<Image src={images[info.image]} alt={info.name} borderRadius='full' maxH={{base: 300, md:200}} />}
           title={info.name}
-          text={
-            'Head of operations'
-          }
+          text={info.position}
           pb={{base:50,md:0}}
         />
       ))}
@@ -68,14 +64,12 @@ export default function Members() {
 
 
      
-      <SimpleGrid columns={{ base: 1, md: 3,lg:5, xl:6 }} align={'center'} spacing={10} p={100} pt={50} >
+      <SimpleGrid columns={{ base: 1, md: 3,lg:5, xl:6 }} align={'center'} spacing={10} p={70} pt={50} >
       {membersmall.map((info) => (         
         <Feature
-          icon={<Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' borderRadius='full'  maxH={{base: 300, md:150}}/>}
+          icon={<Image src={images[info.image]} alt={info.name} borderRadius='full'  maxH={{base: 300, md:150}}/>}
           title={info.name}
-          text={
-            'Head of operations'
-          }
+          text={info.position}
           pb={50}
         />
       ))}
