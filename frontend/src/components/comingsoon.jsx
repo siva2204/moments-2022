@@ -13,11 +13,11 @@ function ComingSoon() {
    
       <Flex
       w={'full'}
-      h={'50vh'}
+      h={'30vh'}
        >
     <Center width={'full'}>
-    <Heading as='h2' size='2xl'>
-       Augmentation In Progress
+    <Heading as='text' size='md'>
+       We have many scintillating workshops in store for you! Stay Tuned to know more!
      </Heading>
       </Center>
 

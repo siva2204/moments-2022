@@ -51,7 +51,7 @@ import {
     <Center spacing={10} mb={25}>
     <Text fontSize={'4xl'} color={'accent'}>ABOUT </Text> <Text ml={'0.5rem'}fontSize={'4xl'}>US</Text>
     </Center>
-    <Text color={'gray.600'}>Moments: Started as an Environmental Engineering symposium in 1992 has grown to a national level technical symposium extending its arms into all fields of Civil Engineering. It has captured the minds of various civil engineers in the country through its multitude of events ranging from technical quizzes to paper presentations, Rehabilato to Event X.</Text>
+    <Text color={'gray.600'}>Moments is the national level technical symposium of the department of civil engineering, NIT Trichy. Since its inception in 1992, MOMENTS, NIT Trichy has been running with a single aim: To acknowledge and show the significance of Civil Engineering in this transforming world and motivate students in core research. From insightful guest lectures to inventive and challenging events and workshops, this event promotes learning for brilliant minds all over the country. </Text>
     </Stack>
         </Center>
         </Stack>
@@ -83,12 +83,16 @@ import {
                 fontSize={{ base: '3xl', md: '5xl' }}
               >the annual symposium</Text>
               <Text fontSize={'xl'}>
-              Moments: Started as an Environmental Engineering symposium in 1992 has grown to a national level technical symposium extending its arms into all fields of Civil Engineering. It has captured the minds of various civil engineers in the country through its multitude of events ranging from technical quizzes to paper presentations, Rehabilato to Event X.
+                Moments also helps students in building practical applications knowledge by educating them on industry-level research and developments. Entirely run by students, this organisation maintains a good role in developing creative and management skills in students while maintaining excellent team spirit.
+              </Text>
+
+               <Text fontSize={'xl'}>
+               This year, Moments is all set to explore a whole new spectrum of the latest technology and engineering with the theme "Aedificium". It aims to provide a platform for budding engineers to showcase their prowess and skills.
               </Text>
 
 
 
-              <Button
+              {/* <Button
               mt={15}
                 size='md'
                 height='48px'
@@ -105,7 +109,7 @@ import {
 
               >
                 Register Now
-              </Button>
+              </Button> */}
             </Box>
 
            
