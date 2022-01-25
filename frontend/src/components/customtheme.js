@@ -7,10 +7,12 @@ const theme = extendTheme({
   fonts: {
     body: 'Plus Jakarta Sans',
     heading: 'Plus Jakarta Sans',
+    
   },
   colors: {
     accent: '#316BFF',
   },
+  
 });
 
 // export our theme

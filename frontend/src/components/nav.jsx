@@ -153,7 +153,7 @@ const DesktopNav = () => {
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
             {/* <Button
-            display={{ base: 'none', md: 'inline-flex' }}
+            display={{ base: 'none', md: 'none-flex' }}
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
