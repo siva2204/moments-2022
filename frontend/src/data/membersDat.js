@@ -257,3 +257,16 @@ export const MEMBERDATA = [
     image: 'IMG_20210804_003654_892.jpg',
   },
 ];
+
+export const profData = [
+  {
+    name: 'Dr. G Swaminathan',
+    position: 'President',
+    image: 'hod.jpg',
+  },
+  {
+    name: 'Dr. Jeevan Joseph',
+    position: 'Faculty Advisor',
+    image: 'faculty.jpg',
+  },
+];
