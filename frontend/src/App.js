@@ -11,8 +11,7 @@ import theme from './components/customtheme.js';
 // const theme= extendTheme({body:'monospace'},)
 
 function App() {
-  {console.log(theme)}
-  return (
+   return (
     
     <ChakraProvider theme={theme}>
       {/* <Home /> */}
