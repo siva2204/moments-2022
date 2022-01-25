@@ -150,7 +150,7 @@ const DesktopNav = () => {
 
 
           </Stack>
-          <Flex alignItems={'center'}>
+          <Flex alignItems={'center'} ml={138}>                                           {/* remove the ML if the register button is uncommented */}
             <Stack direction={'row'} spacing={7}>
             {/* <Button
             display={{ base: 'none', md: 'none-flex' }}
