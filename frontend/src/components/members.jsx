@@ -33,9 +33,9 @@ const Feature = ({ title, text, icon }) => {
       </Flex>
       <HStack spacing={1}>
       <Text m={0} p={0} fontWeight={600} color={'accent'} fontSize={15}>{title.split(' ')[0]}</Text>
-      <Text  m={0} p={0} fontWeight={400} fontSize={15}>{title.split(' ').reverse().slice( 0,-1).reverse().join(' ')}</Text>
+      <Text  m={0} p={0} fontWeight={400} fontSize={12}>{title.split(' ').reverse().slice( 0,-1).reverse().join(' ')}</Text>
       </HStack>
-      <Text color={'gray.600'}fontSize={13} mt={0}>{text}</Text>
+      <Text color={'gray.600'}fontSize={10} mt={0}>{text}</Text>
     </Stack>
   );
 };
@@ -64,7 +64,7 @@ export default function Members() {
       ))}
       </SimpleGrid>
 
-      <SimpleGrid columns={{ base: 1, md: 2, lg:4}} spacing={{base:10,md:15}} p={100} pb={0}  >
+      <SimpleGrid columns={{ base: 2, md: 2, lg:4}} spacing={{base:10,md:15}} p={10} pb={0}  >
       {memberbig.map((info) => (         
         <Feature
           icon={<Image src={images[info.image]} alt={info.name} borderRadius='full' maxH={{base: 300, md:200}} />}
@@ -78,7 +78,7 @@ export default function Members() {
 
 
      
-      <SimpleGrid columns={{ base: 1, md: 3,lg:5, xl:6 }} align={'center'} spacing={10} p={70} pt={50} >
+      <SimpleGrid columns={{ base: 2, md: 3,lg:5, xl:6 }} align={'center'} spacing={10} p={10} pt={50} mt={50} >
       {membersmall.map((info) => (         
         <Feature
           icon={<Image src={images[info.image]} alt={info.name} borderRadius='full'  maxH={{base: 300, md:150}}/>}

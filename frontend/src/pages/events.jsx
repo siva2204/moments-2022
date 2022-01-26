@@ -71,7 +71,7 @@ function Events() {
 
        <Event title="Photography Contest" description="We cannot freeze the beautiful moments of life. But can capture them and can carry it forever. Moment's photography contest is here to bring your distinctive clicks to the spotlight!" rules={event2} tag="contest" />
 
-       <Event title=" Podcast Competition" description="" rules={event1} tag="competition" />
+       <Event title=" Podcast Competition" description="The contestants are required to record an audio clip for the domain given and submit it within the specified period of time..." rules={event1} tag="competition" />
 
       </SimpleGrid>
 
@@ -86,7 +86,7 @@ function Event({title, description, rules, tag}) {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-     <Box maxW='sm' borderWidth='2px' borderRadius='lg' overflow='hidden' p={15}>
+     <Box maxW='sm' borderWidth='2px' borderRadius='lg' overflow='hidden' p={15} pb={20} position="relative">
 
         <Badge borderRadius='full' px='5' py='1'>
             {tag}
@@ -96,7 +96,7 @@ function Event({title, description, rules, tag}) {
         <Text>{description === "" ? "Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam duaisdhusia dusa duashu duasdhusahd saudusahud ausdhuisahdui ddcdsfd" : description}</Text>
         <Center>
         <Button
-              mt={15}
+              mt={25}
                 size='md'
                 height='40px'
                 width='100px'
@@ -110,7 +110,8 @@ function Event({title, description, rules, tag}) {
                 color:'white'
               }}
               onClick={onOpen}
-
+              style={{position: 'absolute', bottom:'20px'}}
+              
               >
                 View more
         </Button>

@@ -24,6 +24,7 @@ import {Link as RouterLink} from "react-router-dom";
 
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from '../assets/svgs/white-logo.svg'
+import logo1 from '../assets/svgs/logo.svg'
 import whitelogo from '../assets/svgs/logo-w.svg'
 import {  useParams, useLocation  } from 'react-router-dom';
 const Links = [{
@@ -91,7 +92,7 @@ export default function Nav() {
             aria-label={'Toggle Navigation'}
           />
           <Center alignContent={'center'}>
-          <Image src={whitelogo} boxSize={50} />
+         {colorMode === 'light' ? <Image src={logo1} width="50px" height="50px"  /> : <Image src={whitelogo} boxSize={50}/>}
        
         </Center> 
         </Flex>
@@ -203,8 +204,8 @@ const MobileNavItem = ({ children }) => {
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
-        as={Link}
-        href={children.path ?? '#'}
+        as={RouterLink}
+        to={children.path ?? '#'}
         justify={'space-between'}
         align={'center'}
         _hover={{

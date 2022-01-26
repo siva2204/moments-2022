@@ -66,7 +66,7 @@ export default function Footer() {
             <ListHeader>PAGES</ListHeader>
             <Link href={'/home'}>Home</Link>
             {/* <Link href={'/about'}>About</Link> */}
-            <Link href={'/workshops'}>Workshops</Link>
+            <Link href={'/workshop'}>Workshops</Link>
             <Link href={'/events'}>Events</Link>
           </Stack>
 
