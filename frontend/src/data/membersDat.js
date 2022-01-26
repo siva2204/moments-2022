@@ -70,7 +70,7 @@ export const MEMBERDATA = [
     position: 'Events Head',
     image: 'Events_Head_Nikila MB - Mb Nikila.jpeg',
   },
-  {
+  /*{
     name: 'Rakesh Kumar K R',
     position: 'Public Relations And Hospitality Head',
     image: 'not-found.jpeg',
@@ -79,7 +79,7 @@ export const MEMBERDATA = [
     name: 'Aparna P',
     position: 'Public Relations And Hospitality Head',
     image: 'not-found.jpeg',
-  },
+  },*/
   {
     name: 'Meruva Reddi Narasimha',
     position: 'Public Relations And Hospitality Head',
@@ -133,7 +133,7 @@ export const MEMBERDATA = [
   {
     name: 'Prathiksha R',
     position: 'Publicity Head',
-    image: 'not-found.jpeg',
+    image: 'IMG20211012085639 - yamini ramesh.jpg',
   },
   {
     name: 'Shimrith Pearlin Priscilla',
@@ -146,7 +146,7 @@ export const MEMBERDATA = [
     image: 'IMG_20211227_100927__01 - anish rai.jpg',
   },
   {
-    name: 'Emuhil K',
+    name: 'Elamuhil K',
     position: 'Alumni Relations Co-Head',
     image: 'Alimni Relatin_Co-Head_Elamuhil K - Elamuhil K.JPG',
   },

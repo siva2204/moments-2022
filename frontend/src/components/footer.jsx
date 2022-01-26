@@ -61,7 +61,7 @@ export default function Footer() {
       bg={useColorModeValue('white', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container as={Stack} maxW={'8xl'} py={10}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, sm: 1, md: 5 }} spacing={10}>
           <Stack align={'flex-start'}>
             <ListHeader>PAGES</ListHeader>
             <Link href={'/home'}>Home</Link>
@@ -73,15 +73,15 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>CONTACTS</ListHeader>
             
-            <Text >Merciidus R E<Link href={'#'} color={'accent'} ml={2}>+91 9677614593</Link></Text>
+            <Text >Merciidus R E<Link href={'tel:+919677614593'} color={'accent'} ml={2}>+919677614593</Link></Text>
             
             
             
-            <Text >Ezhilarasan V<Link href={'#'} color={'accent'} ml={2}>+91 7502550473</Link></Text>
+            <Text >Ezhilarasan V<Link href={'tel:+917502550473'} color={'accent'} ml={2}>+917502550473</Link></Text>
             
             
             
-            <Text >Prasanna P<Link href={'#'} color={'accent'} ml={5}>+91 7358836573</Link></Text>
+            <Text >Prasanna P<Link href={'tel:+917358836573'} color={'accent'} ml={5}>+917358836573</Link></Text>
             
             
           </Stack>
