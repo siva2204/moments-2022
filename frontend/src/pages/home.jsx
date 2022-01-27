@@ -20,7 +20,7 @@ function Home() {
       <Navbar />
       <Flex
       w={'full'}
-      h={'100vh'}
+      h={{base:'450px', md: '100vh', lg: '100vh'}}
       
       // backgroundColor={'rgba(10, 12, 32, 0.22)'}
       backgroundImage={banner}

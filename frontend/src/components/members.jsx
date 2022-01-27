@@ -32,8 +32,8 @@ const Feature = ({ title, text, icon }) => {
         {icon}
       </Flex>
       <HStack spacing={1}>
-      <Text m={0} p={0} fontWeight={600} color={'accent'} fontSize={15}>{title.split(' ')[0]}</Text>
-      <Text  m={0} p={0} fontWeight={400} fontSize={12}>{title.split(' ').reverse().slice( 0,-1).reverse().join(' ')}</Text>
+      <Text m={0} p={0} fontWeight={400} color={'accent'} fontSize={13}>{title.split(' ')[0]}</Text>
+      <Text  m={0} p={0} fontWeight={400} fontSize={13}>{title.split(' ').reverse().slice( 0,-1).reverse().join(' ')}</Text>
       </HStack>
       <Text color={'gray.600'}fontSize={10} mt={0}>{text}</Text>
     </Stack>

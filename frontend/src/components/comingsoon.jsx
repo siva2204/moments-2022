@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Box,
   Flex,
-  Heading,
+  Text,
   Center
 } from '@chakra-ui/react';
 
@@ -16,9 +16,9 @@ function ComingSoon() {
       h={'30vh'}
        >
     <Center width={'full'}>
-    <Heading as='text' p={10}>
+    <Text fontSize={{ base: '15px', md: '25px', lg: '35px' }} p={10}>
        We have many scintillating workshops in store for you! Stay Tuned to know more!
-     </Heading>
+     </Text>
       </Center>
 
       </Flex>
