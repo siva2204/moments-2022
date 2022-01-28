@@ -1,6 +1,6 @@
 export const MEMBERDATA = [
   {
-    name: 'Robert Eddison Merciidus',
+    name: 'RE Merciidus',
     position: 'Chairperson',
     image: 'IMG_20181228_153429__01__01__02-01 - eddison merciidus.jpeg',
   },
