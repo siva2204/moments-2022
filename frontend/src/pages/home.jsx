@@ -41,6 +41,17 @@ function Home() {
     boxShadow='md'
     mx={5}
   />
+  <Box
+    as="iframe"
+    title="naruto"
+    src="https://www.youtube.com/embed/hbUxaHwUci8"
+    allowFullScreen
+    width="600px"
+    height="320px"
+    borderRadius={20}
+    boxShadow='md'
+    mx={5}
+  />
 
       </Center>
 
