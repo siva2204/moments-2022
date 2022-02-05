@@ -41,7 +41,8 @@ const event2 = [
   'The contestants are required to capture a picture of any structure relevant to the given theme / topic',
   'A small description shall be given to the picture.',
   'The contestants should upload the picture taken by them on their instagram handle with the description using the hashtags #moments22 #momentsphotography22',
-  'The picture will be judged based on number of likes, relation to the theme, photographical skills and quality.',
+  'The picture will be judged by moments team in accordance with theme, photographical skills and quality.',
+  'Moments team\'s decision would be final.',
   " Plagiarism isn't tolerated."
 ];
 function Events() {
