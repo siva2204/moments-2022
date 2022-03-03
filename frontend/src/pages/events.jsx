@@ -43,7 +43,14 @@ const event2 = [
   'The contestants should upload the picture taken by them on their instagram handle with the description using the hashtags #moments22 #momentsphotography22',
   'The picture will be judged by moments team in accordance with theme, photographical skills and quality.',
   'Moments team\'s decision would be final.',
-  " Plagiarism isn't tolerated."
+  " Plagiarism isn't tolerated.",
+];
+const prize1=[];
+const prize2=[
+  "Winner: Online foundation photography course for 3 months worth Rs. 8000",
+  "1st runner up: Online beginners photography course for 3 months worth Rs. 8000 ",
+  "2nd runner up: Online foundation photography course for 1 month worth Rs. 4950 ",
+  "Picsart subscription for top 10 participants worth Rs. 4000",
 ];
 function Events() {
 
@@ -70,9 +77,9 @@ function Events() {
 
       <SimpleGrid columns={{ base: 1, md: 2, lg:4}} spacing={{base:10,md:15}} p={50}>
 
-       <Event title="Photography Contest" description="We cannot freeze the beautiful moments of life. But can capture them and can carry it forever. Moment's photography contest is here to bring your distinctive clicks to the spotlight!" rules={event2} tag="contest" />
+       <Event title="Photography Contest" description="We cannot freeze the beautiful moments of life. But can capture them and can carry it forever. Moment's photography contest is here to bring your distinctive clicks to the spotlight!" prize={prize2} rules={event2} tag="contest" />
 
-       <Event title=" Podcast Competition" description="The contestants are required to record an audio clip for the domain given and submit it within the specified period of time..." rules={event1} tag="competition" />
+       <Event title=" Podcast Competition" description="The contestants are required to record an audio clip for the domain given and submit it within the specified period of time..." prize={prize1} rules={event1} tag="competition" />
 
       </SimpleGrid>
 
@@ -83,9 +90,8 @@ function Events() {
 
 
 
-function Event({title, description, rules, tag}) {
+function Event({title, description, rules, tag, prize}) {
     const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
      <Box maxW='sm' borderWidth='2px' borderRadius='lg' overflow='hidden' p={15} pb={20} position="relative">
 
@@ -131,6 +137,23 @@ function Event({title, description, rules, tag}) {
                 return <ListItem key={i}>{s}</ListItem>;
               })}
             </UnorderedList>
+              
+            { prize.length>0 ?
+              
+              <div>
+            <Text as='h3' my={5}  fontWeight='bold' fontSize='md'>Prizes:</Text>
+            <UnorderedList>
+              {prize.map((s,i)=>{
+                return <ListItem key={i}>{s}</ListItem>;
+              })}
+            </UnorderedList>
+            </div> 
+            :null}
+
+            
+           
+
+
           </ModalBody>
 
           <ModalFooter>
