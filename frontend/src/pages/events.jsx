@@ -110,12 +110,12 @@ function Event1 () {
 
              <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Format</Text>
              <Text as='p' my={5} >Round 1: Online quiz consisting of objective questions (comprising of both Structural and Non-structural)</Text>
-              <Text as='p' my={5}>Round 2: ix teams who have secured the highest marks in Level 1 will qualify for Level 2 and they will acquire a chance to exhibit their proficiency in the field of civil engineering through six rounds of online quizzing. After 6 rounds of strenuous quizzing, teams retaining the top three positions will be awarded.</Text>
+              <Text as='p' my={5}>Round 2: six teams who have secured the highest marks in Level 1 will qualify for Level 2 and they will acquire a chance to exhibit their proficiency in the field of civil engineering through six rounds of online quizzing. After 6 rounds of strenuous quizzing, teams retaining the top three positions will be awarded.</Text>
 
 
             <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Platform</Text>
            <Text as='p' my={5}>Round 1 – HackerEarth</Text>
-              <Text as='p' my={5}>Round 1 – MS Teams</Text>
+              <Text as='p' my={5}>Round 2 – MS Teams</Text>
 
           <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Rules</Text>
             <UnorderedList>
@@ -234,6 +234,11 @@ function Event2 () {
 
               <ListItem>
                 Plagiarism is not allowed.
+              </ListItem>
+
+
+              <ListItem>
+                Autocad software is necessary.
               </ListItem>
 
             </UnorderedList>
