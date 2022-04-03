@@ -82,6 +82,8 @@ export default function Footer() {
             
             
             <Text >Prasanna P<Link href={'tel:+917358836573'} color={'accent'} ml={6}>+917358836573</Link></Text>
+
+            <Text >Siddhartha<Link href={'tel:+919494202722'} color={'accent'} ml={6}>+919494202722</Link></Text>
             
             
           </Stack>
