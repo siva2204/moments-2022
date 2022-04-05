@@ -565,7 +565,7 @@ Dr. Krishnan completed his PhD from the Indian Institute of Science Banglore and
           <Image height="400" src="https://i.imgur.com/E0l7JQ2.png" alt="Dr. N M Anoop Krishnan's Guest Lecture" />
        </Center>
 
-        <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Giest Lecture description</Text>
+        <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Guest Lecture description</Text>
         <Text as='p' my={5}>We, at Moment’s are glad to bring to you Dr. N M Anoop Krishnan, Assistant Professor at IIT Delhi currently working in the Multiphysics and Multiscale Mechanics Research group.
 Dr. Krishnan completed his PhD from the Indian Institute of Science Banglore and has worked as a Postdoctoral Researcher in the University of California, LA. Join us to listen to Dr. Krishnan share his knowledge and experience!!</Text>
 
