@@ -51,6 +51,7 @@ function Events() {
       <Event3 />
       <Event4/>
       <Event5/>
+      <Event6/>
       </SimpleGrid>
 
       <Footer/>
@@ -489,7 +490,7 @@ function Event5 () {
           <ModalBody>
             
             <Center>
-               <Image height="400" src="https://i.imgur.com/qY4Syak.png" alt="TECHMARATHON" />
+               <Image height="400" src="https://i.imgur.com/TtWelJL.png" alt="TECHMARATHON" />
             </Center>
 
              <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Event description</Text>
@@ -518,6 +519,78 @@ function Event5 () {
         </Box>
 
 }
+function Event6 () {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+return <Box maxW='sm' borderWidth='2px' borderRadius='lg' overflow='hidden' p={15} pb={20} position="relative">
 
+   <Badge borderRadius='full' px='5' py='1'>
+       guest lecture
+   </Badge>
+
+   <Text as='h3' my={5}  fontWeight='bold' fontSize='2xl'>Dr. N M Anoop Krishnan's Guest Lecture</Text>
+   <Text>We, at Moment’s are glad to bring to you Dr. N M Anoop Krishnan, Assistant Professor at IIT Delhi currently working in the Multiphysics and Multiscale Mechanics Research group.
+Dr. Krishnan completed his PhD from the Indian Institute of Science Banglore and has worked as a Postdoctoral Researcher in the University of California, LA. Join us to listen to Dr. Krishnan share his knowledge and experience!!</Text>
+   <Center>
+   <Button
+         mt={25}
+           size='md'
+           height='40px'
+           width='100px'
+           border='1px'
+           borderColor='#C0C1D1'
+           borderRadius={4}
+           zIndex={1}
+           _hover={{
+           textDecoration: 'none',
+           bg: useColorModeValue('accent','accent'),
+           color:'white'
+         }}
+         onClick={onOpen}
+         style={{position: 'absolute', bottom:'20px'}}
+         
+         >
+           View more
+   </Button>
+
+   </Center>
+
+    <Modal scrollBehavior="inside" isOpen={isOpen} onClose={onClose} isCentered motionPreset='slideInBottom' size="xl">
+   <ModalOverlay />
+   <ModalContent>
+     <ModalHeader>Dr. N M Anoop Krishnan's Guest Lecture</ModalHeader>
+     <ModalCloseButton />
+     <ModalBody>
+       
+       <Center>
+          <Image height="400" src="https://i.imgur.com/E0l7JQ2.png" alt="Dr. N M Anoop Krishnan's Guest Lecture" />
+       </Center>
+
+        <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Giest Lecture description</Text>
+        <Text as='p' my={5}>We, at Moment’s are glad to bring to you Dr. N M Anoop Krishnan, Assistant Professor at IIT Delhi currently working in the Multiphysics and Multiscale Mechanics Research group.
+Dr. Krishnan completed his PhD from the Indian Institute of Science Banglore and has worked as a Postdoctoral Researcher in the University of California, LA. Join us to listen to Dr. Krishnan share his knowledge and experience!!</Text>
+
+       <Text as='h3' my={5}  fontWeight='bold' fontSize='xl'>Individual Participation</Text>
+
+
+     </ModalBody>
+
+     {/* <ModalFooter> */}
+       <Center>
+       <Button colorScheme='blue' m={3} onClick={() => {
+         window.location.assign("https://forms.gle/uUGRXTvwpq2YquLBA");
+       }}>
+         Register Now
+       </Button>
+       </Center>
+
+     {/* </ModalFooter> */}
+   </ModalContent>
+ </Modal>
+
+
+     
+   </Box>
+
+}
 
 export default Events;
