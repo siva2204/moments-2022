@@ -4,6 +4,7 @@ import '@fontsource/plus-jakarta-sans';
 import Home from './pages/home';
 import Events from './pages/events';
 import Workshop from './pages/workshop';
+import Guestlecture from './pages/gl';
 import Navbar from './components/nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import theme from './components/customtheme.js';
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/workshop" element={<Workshop />} />
+          <Route exact path="/guestlectures" element={<Guestlecture />} />
         </Routes>
       </Router>
     </ChakraProvider>
