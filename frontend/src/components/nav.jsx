@@ -37,7 +37,11 @@ const Links = [{
 }, {
   label: 'Events',
   path: '/events'
-}];
+},{
+  label: 'Guest Lectures',
+  path: '/guestlectures'
+}
+];
 
 
 const NavLink = ({ children,current }) => (
