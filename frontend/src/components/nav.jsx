@@ -28,6 +28,7 @@ import logo1 from '../assets/svgs/logo.svg'
 import whitelogo from '../assets/svgs/logo-w.svg'
 import {  useParams, useLocation  } from 'react-router-dom';
 import nittLogo from '../assets/images/nitt.png'
+import momentsLogo from '../assets/images/moments_white_logo.png'
 const Links = [{
   label: 'Home',
   path: '/'
@@ -135,9 +136,9 @@ const DesktopNav = () => {
     <>
       {console.log(page)}
       <Box zIndex={12} bg={' rgba(10, 12, 32, 0.45)'} px={4} position={'fixed'} width={'100%'} display={{ base: 'none', md: 'block' }}> 
-        <Flex h={70} alignItems={'center'} justifyContent={'space-between'}>
+        <Flex h={83} alignItems={'center'} justifyContent={'space-between'}>
         
-          <Box mt={4}><Stack direction={'row'} spacing={1} alignItems={'center'}><Image src={nittLogo} mt={-3} boxSize={59}/> <Image src={logo} boxSize={180} /></Stack></Box>
+          <Box mt={4}><Stack direction={'row'} spacing={1} alignItems={'center'}><Image src={nittLogo} mt={-3} boxSize={59}/> <Image src={logo} boxSize={180} /> <Image src={momentsLogo} boxSize={90} /></Stack></Box>
           <Stack direction={'row'} alignItems={'center'}>
           
          

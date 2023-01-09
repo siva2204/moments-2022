@@ -13,9 +13,11 @@ import {
   useColorMode
   
 } from '@chakra-ui/react';
-import {FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
-import logo from '../assets/svgs/logo.svg';
-import whitelogo from '../assets/svgs/logo-w.svg'
+import {FaYoutube, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
+//import logo from '../assets/svgs/logo.svg';
+//import whitelogo from '../assets/svgs/logo-w.svg'
+import momentsLogo from '../assets/images/moments_black_logo.png'
+import momentswhiteLogo from '../assets/images/moments_white_logo.png'
 
 
 const ListHeader = ({ children }) => {
@@ -68,22 +70,23 @@ export default function Footer() {
             {/* <Link href={'/about'}>About</Link> */}
             <Link href={'/workshop'}>Workshops</Link>
             <Link href={'/events'}>Events</Link>
+            <Link href={'/guestlectures'}>Guest Lectures</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
             <ListHeader>CONTACTS</ListHeader>
             
-            <Text >Merciidus R E<Link href={'tel:+919677614593'} color={'accent'} ml={2}>+919677614593</Link></Text>
+            <Text >Madhesh<Link href={'tel:+918489850850'} color={'accent'} ml={2}>+918489850850</Link></Text>
             
             
             
-            <Text >Ezhilarasan V<Link href={'tel:+917502550473'} color={'accent'} ml={2}>+917502550473</Link></Text>
+            <Text >Dhinesh<Link href={'tel:+917871852977'} color={'accent'} ml={2}>+917871852977</Link></Text>
             
             
             
-            <Text >Prasanna P<Link href={'tel:+917358836573'} color={'accent'} ml={6}>+917358836573</Link></Text>
+            <Text >Shruthi<Link href={'tel:+919150290371'} color={'accent'} ml={6}>+919150290371</Link></Text>
 
-            <Text >Siddhartha<Link href={'tel:+919494202722'} color={'accent'} ml={6}>+919494202722</Link></Text>
+            <Text >Pattabhi<Link href={'tel:+917036620202'} color={'accent'} ml={6}>+917036620202</Link></Text>
             
             
           </Stack>
@@ -100,6 +103,9 @@ export default function Footer() {
             </SocialButton>
             <SocialButton label={'Youtube'} href={'https://youtube.com/channel/UCC3RfmE-enzmzcMWHtIumag'}>
               <FaYoutube />
+            </SocialButton>
+            <SocialButton label={'Linkedin'} href={'https://www.linkedin.com/company/civil-engineering-association-nittrichy/'}>
+            <FaLinkedin />
             </SocialButton>
 
 
@@ -132,11 +138,11 @@ export default function Footer() {
           <Stack direction={'row'} alignItems={'center'}>
 
 
-          {colorMode === 'light' ? <Image src={logo} mr={0} boxSize={70}/> : <Image src={whitelogo} mr={0} boxSize={70}/>}
-          
-          <Text >CIVIL ENGINEERING ASSOCIATION</Text>
+          {colorMode === 'light' ? <Image src={momentsLogo} mr={0} boxSize={20}/> : <Image src={momentswhiteLogo} mr={0} boxSize={20}/>}
+{/*           
+          <Text >MOMENTS </Text> */}
           </Stack>
-          <Text alignContents={'right'}>Official website for Moments, the annual  symposium of the Civil Engineering department, NIT Trichy</Text>
+          <Text alignContents={'right'}>Official website for Moments, the national level technical symposium of the Department of Civil Engineering department, NIT Trichy</Text>
           </Container>
       </Box>
     </Box>

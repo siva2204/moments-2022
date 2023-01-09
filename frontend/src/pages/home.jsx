@@ -33,7 +33,7 @@ function Home() {
   <Box
     as="iframe"
     title="naruto"
-    src="https://www.youtube.com/embed/cThFNALuXiY"
+    src="https://www.youtube.com/embed/reFQndW8VCI"
     allowFullScreen
     width="600px"
     height="320px"
