@@ -64,7 +64,7 @@ export default function Members() {
       ))}
       </SimpleGrid>
 
-      {/* <SimpleGrid columns={{ base: 2, md: 2, lg:4}} spacing={{base:10,md:15}} p={10} pb={0}  >
+      <SimpleGrid columns={{ base: 2, md: 2, lg:4}} spacing={{base:10,md:15}} p={10} pb={0}  >
       {memberbig.map((info) => (         
         <Feature
           icon={<Image src={images[info.image]} alt={info.name} borderRadius='full' maxH={{base: 300, md: 175}} />}
@@ -73,7 +73,7 @@ export default function Members() {
           pb={{base:50,md:0}}
         />
       ))}
-      </SimpleGrid> */}
+      </SimpleGrid>
 
 
 
