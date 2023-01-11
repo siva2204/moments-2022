@@ -1,23 +1,23 @@
 export const MEMBERDATA = [
   {
-    name: 'Merciidus R E',
+    name: 'Madhesh Chandrasekar',
     position: 'Chairperson',
-    image: 'IMG_20181228_153429__01__01__02-01 - eddison merciidus.jpeg',
+    image: 'IMG_20221026_203223 - Madhesh Chandrasekar.jpg',
   },
   {
-    name: 'Ezhilarasan V',
+    name: 'Dhinesh Kumar',
     position: 'Overall Coordinator',
-    image: 'IMG-20201014-WA0008 - Ezhilarasan V.jpg',
+    image: 'IMG_20221025_222153 - dhinesh kumar.jpg',
   },
   {
-    name: 'Kondaka Siddardha',
+    name: 'Haswanth Pattabhi',
     position: 'Treasurer',
-    image: 'Screenshot_20211227-104212 - Siddardha kondaka.jpg',
+    image: 'IMG_20220716_231537_ - haswanth pattabhi.jpg',
   },
   {
-    name: 'Prasanna P',
+    name: 'Shruthi Ganapathy Rajan',
     position: 'General Secretary',
-    image: '20211227_104916 - Prasanna Paranjabey.jpg',
+    image: 'Core_vice chairperson_ G Shruthi Keerthana - Shruthi Ganapathy Rajan.jpg',
   },
   {
     name: 'G Shruthi Keerthana',
