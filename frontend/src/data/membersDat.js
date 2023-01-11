@@ -260,7 +260,7 @@ export const MEMBERDATA = [
 
 export const profData = [
   {
-    name: 'Dr. G Swaminathan',
+    name: 'Dr. S.T.Ramesh',
     position: 'President',
     image: 'hod.jpg',
   },
