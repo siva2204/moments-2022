@@ -142,7 +142,7 @@ export default function Footer() {
 {/*           
           <Text >MOMENTS </Text> */}
           </Stack>
-          <Text alignContents={'right'}>Official website for Moments, the national level technical symposium of the Department of Civil Engineering department, NIT Trichy</Text>
+          <Text alignContents={'right'}>Official website for Moments, the national level technical symposium of the Department of Civil Engineering, NIT Trichy</Text>
           </Container>
       </Box>
     </Box>
