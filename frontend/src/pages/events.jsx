@@ -57,7 +57,7 @@ function Events() {
               </Text>
             </Center>
             <Text color={'red.600'} align={'center'} fontSize={'2xl'}>
-            <a href="https://drive.google.com/file/d/1_2i32PJIlPyo_H8zSbtmH-r0pOLbExRc/view?usp=share_link"> <b> Click here</b></a>
+            <a href="https://drive.google.com/file/d/14T-XttWsAYpKWd9PAe50AqKad_9agVBW/view?usp=sharing"> <b> Click here</b></a>
             </Text>
           </Stack>
         </Center>
